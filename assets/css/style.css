@@ -3,4 +3,63 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter',sans-serif;
+}/*Global Values*/
+:root{
+    --primary-color:#272d38;
+}
+.whiteSpace{
+    margin-left: 188px;
+    margin-right: 187px;
+}
+/*End Global Values*/
+header{
+    height: 100vh;
+}
+nav{
+    margin-left:188px;
+    margin-right:176px;
+}
+.navbar-brand{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.nav-link{
+    color: var(--primary-color);;
+    font-weight: 400;
+}
+.nav-link:not(:last-child){
+    margin-right: 44px;
+}
+.navbar-toggler:focus{
+    box-shadow:none ;
+}
+
+/*Hero*/
+.hero {
+    .main-heading{
+        color: var(--primary-color);
+        font-size: 64px !important;
+    }
+    .hero-info{
+        max-width: 540px;
+    }
+    .hero-img{
+        max-width: 450px;
+    }
+}
+.hero {
+    margin-top:140px ;
+}
+.btn {
+    background-color: rgba(142, 173, 213, 1);
+    line-height: 27.5px;
+}
+/*Media Query*/
+@media screen and (max-width:992px){
+    nav{
+        margin-inline:24px ;
+}
+.navbar-brand{
+    font-size: 14px;
+}
 }
