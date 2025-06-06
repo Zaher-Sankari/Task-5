@@ -7,13 +7,15 @@
 :root{
     --primary-color:#272d38;
 }
-.whiteSpace{
+/* .whiteSpace{
     margin-left: 188px;
     margin-right: 187px;
-}
+} */
 /*End Global Values*/
 header{
     height: 100vh;
+    background: linear-gradient(to bottom, #f7f9ff 0%, #ffffff 50%);
+    background-repeat: no-repeat;
 }
 nav{
     margin-left:188px;
@@ -38,28 +40,33 @@ nav{
 .hero {
     .main-heading{
         color: var(--primary-color);
-        font-size: 64px !important;
-    }
-    .hero-info{
+        font-size: 64px;
         max-width: 540px;
     }
-    .hero-img{
-        max-width: 450px;
-    }
 }
-.hero {
-    margin-top:140px ;
+/* .hero {
+    margin-top:97px ;
+} */
+.hero-img{
+    max-width: 450px;
 }
 .btn {
     background-color: rgba(142, 173, 213, 1);
     line-height: 27.5px;
+    margin-top: 39px;
 }
 /*Media Query*/
 @media screen and (max-width:992px){
+    .whiteSpace{
+        margin-inline: 25px;
+    }
     nav{
         margin-inline:24px ;
 }
 .navbar-brand{
     font-size: 14px;
+}
+.main-heading{
+    font-size: 40px !important;
 }
 }
