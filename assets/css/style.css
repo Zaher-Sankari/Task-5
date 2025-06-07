@@ -11,6 +11,12 @@
     margin-left: 188px;
     margin-right: 187px;
 }
+ul {
+    list-style: none;
+}
+a{
+    color: var(--primary-color);
+}
 /*End Global Values*/
 header{
     height: 100vh;
@@ -21,6 +27,16 @@ header{
     margin-left:188px;
     margin-right:176px;
 } */
+nav .aura{
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    background-color: #8EADD53D;
+    position: absolute;
+    left:-25% ;
+    bottom:-100% ;
+    filter: blur(50px);
+}
 .navbar-brand{
     color: var(--primary-color);
     font-weight: 700;
@@ -73,12 +89,44 @@ header{
         height: 100%;
     }
 }
-
-
+.about-info{
+    max-width: 435px;
+}
+#about svg{
+    font-size: 20px;
+}
+.analyze{
+    margin-top: 120px;
+}
+footer{
+    width: 100%;
+    margin-top: 136px;
+    background-color: #bbbbbb;
+    h2{font-size: 18px;}
+    .container{
+        padding-top: 105px;
+    }
+    .logo{
+        max-width: 205px;
+        h2{margin-bottom: 40px;}
+        p{font-size: 16px;
+        color: var(--primary-color);}
+    }
+    .trade-mark{
+        margin-top: 110px;
+    }
+}
 /*Media Query*/
+@media screen and (min-width:1200){
+    .whiteSpace{
+    margin-left: 188px;
+    margin-right: 187px;
+}
+}
 @media screen and (max-width:992px){
     .whiteSpace{
-        margin-inline: 75px;
+        margin-left: 0;
+        margin-right: 0;
     }
 nav{
     margin-inline:24px ;
@@ -110,10 +158,38 @@ nav{
     }
     .brands-container{
         padding: 24px 16px !important;
-        min-width: 300px !important;
+        min-width: 250px !important;
         flex-wrap: nowrap;
         img{
+            padding-inline: 10px;
             max-width:70px ;
     }
+    img:last-child{
+        width: 50px;
     }
+    }
+    .about {
+        flex-direction: column-reverse;
+
+    }
+    #about svg{
+            transform: rotate(90deg);
+    }
+    .contact img{
+        display: none;
+    }
+    footer .row{
+        flex-direction: column;
+        text-align: center;
+        .info-div{
+            margin-bottom: 72px;
+        }
+         .logo{
+        max-width: 205px;
+        margin: 0 auto;
+        margin-bottom: 72px;}
+    }
+    footer .trade-mark{
+        margin-top: 0;
+    }   
 }

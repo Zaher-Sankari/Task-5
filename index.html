@@ -12,26 +12,28 @@
     <title>Digital Agency</title>
 </head>
 <body>
-    <header class="vh-100 d-flex flex-column">
-        <nav class="navbar navbar-expand-lg bg-transparent whiteSpace">
+    <header class="d-flex flex-column vh-100">
+        <nav class="navbar navbar-expand-md whiteSpace position-relative">
+            <div class="aura position-absolute"></div>
             <div class="container">
-                <a class="navbar-brand" href="#">Digital Agency</a>
-                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                <a class="navbar-brand fw-bold fs-4" href="#">Digital Agency</a>
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">home</a>
-                        <a class="nav-link" href="#">about</a>
-                        <a class="nav-link" href="#">pricing</a>
-                        <a class="nav-link" href="#">contact</a>
+                        <a class="nav-link text-capitalize active" aria-current="page" href="#">home</a>
+                        <a class="nav-link text-capitalize" href="#">about</a>
+                        <a class="nav-link text-capitalize" href="#">pricing</a>
+                        <a class="nav-link text-capitalize" href="#">contact</a>
                     </div>
                 </div>
             </div>
         </nav>
+
         <div class="hero d-flex flex-grow-1 align-items-center justify-content-center whiteSpace">
             <div class="container">
-            <div class="row align-items-center">
+            <div class="row justify-content-between align-items-center">
                 <div class="col-md-6 text-md-start text-center hero-info">
                     <h1 class="display-3 fw-bold main-heading">Building Digital Products, Brands & Experience</h1>
                     <p class="my-4">
@@ -39,7 +41,7 @@
                     </p>
                     <button href="#" class="m-0 btn btn-lg text-uppercase fs-6">contact us</button>
                 </div>
-                <div class="col-md-6 text-center hero-img d-block mx-auto">
+                <div class="col-md-6 text-center hero-img">
                     <img src="./assets/imgs/hero.png" alt="hero-bg">
                 </div>
             </div>
@@ -47,26 +49,106 @@
         </div>
     </header>
     <main class="whiteSpace">
-        <section id="brands" class="brands">
+        <section class="py-5 bg-light">
             <div class="container">
                 <p class="text-center fw-light mb-4">Trusted by 4,000+ companies</p>
-                <div class="row brands-container align-items-center justify-content-between p-4">
-                    <div class="col-12 w-auto px-0">
-                        <img src="./assets/imgs/spotify.png" alt="">
+                <div class="d-flex flex-wrap justify-content-center justify-content-md-around align-items-center gap-5">
+                    <img src="./assets/imgs/spotify.png" alt="Spotify Logo">
+                    <img src="./assets/imgs/slack.png" alt="Slack Logo">
+                    <img src="./assets/imgs/dropbox.png" alt="Dropbox Logo">
+                    <img src="./assets/imgs/zoom.png" alt="Zoom Logo">
+                </div>
+            </div>
+        </section>
+        <section id="about" class="py-5 my-4">
+            <div class="container">
+                <div class="row justify-content-between align-items-center gy-5 about">
+                    <div class="col-md-6 text-center">
+                        <img src="./assets/imgs/pencil.png" alt="People carrying a large pencil" class="img-fluid">
                     </div>
-                    <div class="col-md-3 w-auto px-0">
-                        <img src="./assets/imgs/slack.png" alt="">
+                    <div class="col-md-5 text-md-start text-center">
+                        <h2 class="display-5 fw-bold">Branding & Design System</h2>
+                        <p class="fs-5 text-secondary my-4">
+                            Commonly used in the graphic, print & publishing industris for previewing visual layout and mockups
+                        </p>
+                            <i class="fa-solid fa-arrow-right arrow"></i>
                     </div>
-                    <div class="col-md-3 w-auto px-0">
-                        <img src="./assets/imgs/dropbox.png" alt="">
+                </div>
+                <div class="aura1 position-absolute"></div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-between align-items-center gy-5">
+                    <div class="col-md-5 text-md-start text-center">
+                        <h2 class="display-5 fw-bold">Custome & Plugin Development</h2>
+                        <p class="fs-5 text-secondary my-4">
+                            Commonly used in the graphic, print & publishing industris for previewing visual layout and mockups
+                        </p>
+                            <i class="fa-solid fa-arrow-right arrow"></i>
                     </div>
-                    <div class="col-md-3 w-auto px-0">
-                        <img src="./assets/imgs/zoom.png" alt="">
+                    <div class="col-md-6 text-center order-1 order-md-2">
+                        <img src="./assets/imgs/analyze.png" alt="A person working on a screen with data" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonial" class="testimonial">
+
+        </section>
+        <section id="contact" class="contact">
+                        <div class="container">
+                <div class="row justify-content-between align-items-center gy-5 about">
+                    <div class="col-md-6 text-center">
+                        <img src="./assets/imgs/customer-support.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-5 text-md-start text-center">
+                        <h2 class="display-5 fw-bold">Be a part of the next big thing</h2>
+                        <p class="fs-5 text-secondary my-4">
+                            We work with Brans, Startups, to SMEs. Colaborate for more impact and growt
+                        </p>
+                        <button href="#" class="m-0 btn btn-lg text-uppercase fs-6">contact us</button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-between">
+            <div class="logo col-12 col-md-3">
+                <h2 class="fw-bold">Digital Agency</h2>
+                <p class="fs-6 fw-light">Building digital products, brands & experience</p>
+            </div>
+                <div class="info-div col-12 col-md-3 w-auto">
+                <h2 class="mb-4 fw-bold">Resources</h2>
+                <ul class="p-0">
+                    <li class="pb-4"><a class="text-decoration-none href="#">Guides</a></li>
+                    <li class="pb-4"><a class="text-decoration-none href="#">Blog</a></li>
+                    <li class="pb-4"><a class="text-decoration-none href="#">Customer Stories</a></li>
+                    <li><a class="text-decoration-none href="#">Glossery</a></li>
+                </ul>
+            </div>
+                <div class=" info-div col-12 col-md-3 w-auto">
+                <h2 class="mb-4 fw-bold">Company</h2>
+                <ul class="p-0">
+                    <li class="pb-4"><a class="text-decoration-none href="#">About Us</a></li>
+                    <li class="pb-4"><a class="text-decoration-none href="#">Careers</a></li>
+                    <li class="pb-4"><a class="text-decoration-none href="#">Partners</a></li>
+                    <li><a class="text-decoration-none href="#">Contact Us</a></li>
+                </ul>
+            </div>
+                <div class="info-div col-12 col-md-3 w-auto">
+                <h2 class="mb-4 fw-bold">Social Media</h2>
+                <ul class="p-0">
+                    <li class="pb-4"><a class="text-decoration-none href="#">LinkedIn</a></li>
+                    <li class="pb-4"><a class="text-decoration-none href="#">Facebook</a></li>
+                    <li class="pb-4"><a class="text-decoration-none href="#">Instagram</a></li>
+                    <li><a class="text-decoration-none href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="trade-mark text-center">&copy; Matheus. Todos os direitos reservados</p>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
 </body>
