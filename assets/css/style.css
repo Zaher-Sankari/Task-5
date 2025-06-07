@@ -66,6 +66,15 @@ header{
     color:#fff;
     background-color:#7088a8 ;
 }
+.brands{
+    margin-top: 157px;
+    .brands-container{
+        background-color: #F6F6F6;
+        height: 100%;
+    }
+}
+
+
 /*Media Query*/
 @media screen and (max-width:992px){
     .whiteSpace{
@@ -98,5 +107,13 @@ nav{
     }
     .hero-img img{
         width: 100%;
+    }
+    .brands-container{
+        padding: 24px 16px !important;
+        min-width: 300px !important;
+        flex-wrap: nowrap;
+        img{
+            max-width:70px ;
+    }
     }
 }
