@@ -147,6 +147,13 @@ nav{
         flex-grow: 0;
         align-items: flex-start !important;
     }
+    .navbar-brand{
+        font-size: 14px !important;
+    }
+    .navbar-toggler{
+        width: 24px;
+        height: 24px;
+    }
     .hero-info{
         text-align: center;
     }
