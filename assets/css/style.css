@@ -7,6 +7,9 @@
 :root{
     --primary-color:#272d38;
 }
+html {
+    scroll-behavior: smooth;
+}
 .whiteSpace{
     margin-left: 188px;
     margin-right: 187px;
@@ -116,17 +119,70 @@ footer{
         margin-top: 110px;
     }
 }
+/*TESTIMONIAL*/
+.slider-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 2rem 0;
+    scroll-behavior: smooth;
+    max-width: 1065px;
+    margin: 0 auto;
+}
+.testimonial-card {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    background-color: #f8f9fa;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    max-width: 345px;
+}
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}             
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.slider-dots a {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+.slider-dots a:hover {
+    background-color: #333;
+}
+.slider-dots a:target {
+    background-color: #000;
+}
+.dots-desktop {
+    display: flex;
+}
+.dots-mobile {
+    display: none;
+}
+.slider-container::-webkit-scrollbar {
+    display: none;
+}
+.slider-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+/*END TESTI.*/
 /*Media Query*/
-@media screen and (min-width:1200){
-    .whiteSpace{
-    margin-left: 188px;
-    margin-right: 187px;
-}
-}
 @media screen and (max-width:992px){
     .whiteSpace{
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 100px;
+        margin-right: 100px;
     }
 nav{
     margin-inline:24px ;
@@ -185,13 +241,19 @@ nav{
     .contact img{
         display: none;
     }
+    .dots-desktop {
+    display: none;}
+        
+    .dots-mobile {
+    display: flex;
+    }
     footer .row{
         flex-direction: column;
         text-align: center;
         .info-div{
             margin-bottom: 72px;
         }
-         .logo{
+        .logo{
         max-width: 205px;
         margin: 0 auto;
         margin-bottom: 72px;}

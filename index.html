@@ -47,6 +47,7 @@
             </div>
         </div>
         </div>
+
     </header>
     <main class="whiteSpace">
         <section class="py-5 bg-light brands">
@@ -91,145 +92,54 @@
                 </div>
             </div>
         </section>
-
-        <section id="testimonial" class="testimonial">
-            <style>
-                html {
-                  scroll-behavior: smooth;
-                }
-                .slider-container {
-                  display: flex;
-                  overflow-x: auto;
-                  scroll-snap-type: x mandatory;
-                  gap: 1rem;
-                  padding: 2rem 0;
-                  scroll-behavior: smooth;
-                }
+        <!-- TESTI. -->
+        <section class="py-5 text-center container">
+            <h6 class="text-uppercase">Testimonials</h6>
+            <h2 class="fw-bold">Read What Other Have To Say</h2>
             
-                .testimonial-card {
-                  flex: 0 0 100%;
-                  scroll-snap-align: center;
-                  background-color: #f8f9fa;
-                  border-radius: 16px;
-                  padding: 20px;
-                  text-align: center;
-                  max-width: 345px;
-                }
-            
-                .testimonial-card img {
-                  width: 80px;
-                  height: 80px;
-                  border-radius: 50%;
-                  margin-bottom: 10px;
-                }
-            
-                @media (min-width: 768px) {
-                  .testimonial-card {
-                    flex: 0 0 calc(100% / 3 - 0.67rem);
-                  }
-                }
-            
-                .slider-dots {
-                  display: flex;
-                  justify-content: center;
-                  gap: 10px;
-                }
-            
-                .slider-dots a {
-                    width: 12px;
-                    height: 12px;
-                    background-color: #ccc;
-                    border-radius: 50%;
-                    display: inline-block;
-                    transition: background-color 0.3s;
-                }
-            
-                .slider-dots a:hover {
-              background-color: #333;
-            }
-            .slider-dots a:target {
-              background-color: #000;
-            }
-                .dots-desktop {
-                  display: none;
-                }
-            
-                .dots-mobile {
-                  display: flex;
-                }
-            
-                @media (min-width: 768px) {
-                  .dots-desktop {
-                    display: flex;
-                  }
-            
-                  .dots-mobile {
-                    display: none;
-                  }
-                }
-            
-                .slider-container::-webkit-scrollbar {
-                  display: none;
-                }
-            
-                .slider-container {
-                  -ms-overflow-style: none;
-                  scrollbar-width: none;
-                }
-              </style>
-            </head>
-            <body>
-            
-            <section class="py-5 text-center container">
-              <h6 class="text-uppercase">Testimonials</h6>
-              <h2 class="fw-bold">Read What Other<br>Have To Say</h2>
-            
-              <div class="slider-container">
+            <div class="slider-container">
                 <div class="testimonial-card" id="card1">
-                  <img src="./assets/imgs/testimonial-1.png" alt="1">
-                  <h5>Andrew Rathore</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
+                    <img src="./assets/imgs/testimonial-1.png" alt="1">
+                    <h5>Andrew Rathore</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
                 </div>
                 <div class="testimonial-card" id="card2">
-                  <img src="./assets/imgs/testimonial-2.png" alt="2">
-                  <h5>Vera Duncan</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
+                    <img src="./assets/imgs/testimonial-2.png" alt="2">
+                    <h5>Vera Duncan</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
                 </div>
                 <div class="testimonial-card" id="card3">
-                  <img src="./assets/imgs/testimonial-3.png" alt="3">
-                  <h5>Mark Smith</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
+                    <img src="./assets/imgs/testimonial-3.png" alt="3">
+                    <h5>Mark Smith</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
                 </div>
                 <div class="testimonial-card" id="card4">
-                  <img src="./assets/imgs/testimonial-1.png" alt="4">
-                  <h5>Sarah Lee</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
+                    <img src="./assets/imgs/testimonial-4.png" alt="4">
+                    <h5>Sarah Lee</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
                 </div>
                 <div class="testimonial-card" id="card5">
-                  <img src="./assets/imgs/testimonial-2.png" alt="5">
-                  <h5>John Doe</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
+                    <img src="./assets/imgs/testimonial-5.png" alt="5">
+                    <h5>John Doe</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
                 </div>
-              </div>
-            
-              <!-- Desktop: 3 points -->
-              <div class="slider-dots dots-desktop my-3">
+            </div>
+            <!-- Desktop: 3 points -->
+            <div class="slider-dots dots-desktop my-3">
                 <a href="#card1" id="dot1"></a>
                 <a href="#card4" id="dot2"></a>
                 <a href="#card5" id="dot3"></a>
-              </div>
-            
-              <!-- Mobile: 5 points -->
-              <div class="slider-dots dots-mobile my-3">
+            </div>
+            <!-- Mobile: 5 points -->
+            <div class="slider-dots dots-mobile my-3">
                 <a href="#card1"></a>
                 <a href="#card2"></a>
                 <a href="#card3"></a>
                 <a href="#card4"></a>
                 <a href="#card5"></a>
-              </div>
-            
-            </section>
+            </div>
         </section>
+        <!-- END TESTI. -->
         <section id="contact" class="contact">
                         <div class="container">
                 <div class="row justify-content-between align-items-center gy-5 about">
