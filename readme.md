@@ -10,3 +10,4 @@
 1) A css property that makes the cards slide on touch or by clicking on the dots underneath the cards (pagination).
 2)  On smaller screens (<=768px): each dot represents an ID for each card, while on larger screens the dots behave differently.
 3)  The left dot shows the cards(1-2-3), the middle dot shows the cards(2-3-4) while the right dot shows the cards(3-4-5) all with sliding effect.
+## 4- Slick Carousel ??
