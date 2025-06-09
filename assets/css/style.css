@@ -104,8 +104,11 @@ nav .aura{
 footer{
     width: 100%;
     margin-top: 136px;
-    background-color: #bbbbbb;
-    h2{font-size: 18px;}
+    background-color: #F6F6F6;
+
+    h2{
+        font-size: 18px;
+    }
     .container{
         padding-top: 105px;
     }
@@ -120,15 +123,20 @@ footer{
     }
 }
 /*TESTIMONIAL*/
+.testimonial-heading{
+    max-width: 436px;
+    h1,h2{
+        color: var(--primary-color);
+    }
+}
 .slider-container {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    gap: 1rem;
-    padding: 2rem 0;
+    gap: 16px;
+    padding: 32px 0;
     scroll-behavior: smooth;
     max-width: 1065px;
-    margin: 0 auto;
 }
 .testimonial-card {
     flex: 0 0 100%;
@@ -138,31 +146,39 @@ footer{
     padding: 20px;
     text-align: center;
     max-width: 345px;
+
+    h3{
+        font-size: 18px;
+        color: var(--primary-color);
+        padding-bottom: 27px;
+    }
 }
 .testimonial-card img {
-    width: 80px;
-    height: 80px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     margin-bottom: 10px;
 }             
 .slider-dots {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
+    height: 30px;
 }
 .slider-dots a {
     width: 12px;
     height: 12px;
-    background-color: #ccc;
     border-radius: 50%;
+    border: 2px solid #8EADD5;
     display: inline-block;
     transition: background-color 0.3s;
+    transition: all ease-in-out .3s;
 }
 .slider-dots a:hover {
-    background-color: #333;
-}
-.slider-dots a:target {
-    background-color: #000;
+    background-color: #8EADD5;
+    width: 20px;
+    height: 20px;
 }
 .dots-desktop {
     display: flex;
@@ -170,11 +186,7 @@ footer{
 .dots-mobile {
     display: none;
 }
-.slider-container::-webkit-scrollbar {
-    display: none;
-}
 .slider-container {
-    -ms-overflow-style: none;
     scrollbar-width: none;
 }
 /*END TESTI.*/
@@ -241,6 +253,14 @@ nav{
     .contact img{
         display: none;
     }
+    .testimonial-heading{
+    h1{
+        font-size: 12px !important;
+    }
+    h2{
+        font-size: 32px;
+    }
+}
     .dots-desktop {
     display: none;}
         
