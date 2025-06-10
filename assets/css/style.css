@@ -6,6 +6,10 @@
 }/*Global Values*/
 :root{
     --primary-color:#272d38;
+    --aura-color:#8EADD53D;
+    --btn-primary:#8eadd5;
+    --btn-hover:#7088a8;
+    --white:#fff;
 }
 html {
     scroll-behavior: smooth;
@@ -20,26 +24,28 @@ ul {
 a{
     color: var(--primary-color);
 }
+.mb-120{
+    margin-bottom: 120px;
+}
 /*End Global Values*/
 header{
     height: 100vh;
-    background: linear-gradient(to bottom, #f7f9ff 0%, #ffffff 50%);
-    background-repeat: no-repeat;
 }
-/* nav{
-    margin-left:188px;
-    margin-right:176px;
-} */
 nav .aura{
     width: 50vw;
     height: 50vw;
     border-radius: 50%;
-    background-color: #8EADD53D;
-    position: absolute;
-    left:-25% ;
-    bottom:-100% ;
-    filter: blur(50px);
+    background-color: var(--aura-color);
+    left:-35% ;
+    filter: blur(100px);
 }
+/* .aura1{
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    background-color: red;
+    filter: blur(100px);
+} */
 .navbar-brand{
     color: var(--primary-color);
     font-weight: 700;
@@ -75,20 +81,20 @@ nav .aura{
     max-width: 450px !important;
 }
 .btn {
-    color: #ffffff;
-    background-color: #8eadd5;
+    color: var(--white);
+    background-color: var(--btn-primary);
     line-height: 27.5px;
     margin-top: 39px;
     width:167px ;
 }
 .btn:hover{
-    color:#fff;
-    background-color:#7088a8 ;
+    color:var(--white);
+    background-color:var(--btn-hover) ;
 }
 .brands{
     margin-top: 157px;
     .brands-container{
-        background-color: #F6F6F6;
+        background-color: var(--bg-color);
         height: 100%;
     }
 }
@@ -104,7 +110,7 @@ nav .aura{
 footer{
     width: 100%;
     margin-top: 136px;
-    background-color: #F6F6F6;
+    background-color: var(--bg-color);
 
     h2{
         font-size: 18px;
@@ -170,13 +176,13 @@ footer{
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    border: 2px solid #8EADD5;
+    border: 2px solid var(--btn-primary);
     display: inline-block;
     transition: background-color 0.3s;
     transition: all ease-in-out .3s;
 }
 .slider-dots a:hover {
-    background-color: #8EADD5;
+    background-color: var(--btn-primary);
     width: 20px;
     height: 20px;
 }
@@ -192,13 +198,10 @@ footer{
 /*END TESTI.*/
 /*Media Query*/
 @media screen and (max-width:992px){
-    .whiteSpace{
-        margin-left: 100px;
-        margin-right: 100px;
+.whiteSpace{
+    margin-left: 25px;
+    margin-right: 25px;
     }
-nav{
-    margin-inline:24px ;
-}
 .hero{
     margin-top: 50px;
 }
@@ -208,9 +211,10 @@ nav{
 }
 
 @media screen and (max-width:768px) {
-    .whiteSpace{
-        margin-inline: 25px;
-    }
+    /* .whiteSpace{
+        margin-left: 25px;
+        margin-right: 25px;
+    } */
     .hero{
         flex-grow: 0;
         align-items: flex-start !important;

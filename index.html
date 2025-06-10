@@ -15,7 +15,7 @@
     <header class="d-flex flex-column vh-100">
         <nav class="navbar navbar-expand-md whiteSpace position-relative">
             <div class="aura position-absolute"></div>
-            <div class="container">
+            <div class="container z-3">
                 <a class="navbar-brand fw-bold fs-4" href="#">Digital Agency</a>
                 <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,8 +30,7 @@
                 </div>
             </div>
         </nav>
-
-        <div class="hero d-flex flex-grow-1 align-items-center justify-content-center whiteSpace">
+        <div class="hero d-flex flex-grow-1 align-items-center justify-content-center whiteSpace z-3">
             <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-md-6 text-md-start text-center hero-info">
@@ -47,8 +46,8 @@
             </div>
         </div>
         </div>
-
     </header>
+
     <main class="whiteSpace">
         <section class="py-5 bg-light brands">
             <div class="container">
@@ -61,8 +60,8 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="py-5 my-4">
-            <div class="container">
+        <section id="about" class="py-5 my-4 position-relative overflow-hidden">
+            <div class="container mb-120">
                 <div class="row justify-content-between align-items-center gy-5 about">
                     <div class="col-md-6 text-center">
                         <img src="./assets/imgs/pencil.png" alt="People carrying a large pencil" class="img-fluid">
@@ -75,7 +74,6 @@
                             <i class="fa-solid fa-arrow-right arrow"></i>
                     </div>
                 </div>
-                <div class="aura1 position-absolute"></div>
             </div>
             <div class="container">
                 <div class="row justify-content-between align-items-center gy-5">
@@ -125,13 +123,11 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
                 </div>
             </div>
-            <!-- Desktop: 3 points -->
             <div class="slider-dots dots-desktop my-3">
                 <a href="#card1" id="dot1"></a>
                 <a href="#card4" id="dot2"></a>
                 <a href="#card5" id="dot3"></a>
             </div>
-            <!-- Mobile: 5 points -->
             <div class="slider-dots dots-mobile my-3">
                 <a href="#card1"></a>
                 <a href="#card2"></a>
