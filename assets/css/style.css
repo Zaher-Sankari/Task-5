@@ -87,9 +87,10 @@ nav .aura{
     margin-top: 39px;
     width:167px ;
 }
-.btn:hover{
-    color:var(--white);
-    background-color:var(--btn-hover) ;
+.btn:hover,
+.btn:active{
+    color:var(--white) !important;
+    background-color:var(--btn-hover) !important;
 }
 .brands{
     margin-top: 157px;
@@ -199,25 +200,34 @@ footer{
 /*Media Query*/
 @media screen and (max-width:992px){
 .whiteSpace{
-    margin-left: 25px;
-    margin-right: 25px;
-    }
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.container{
+    max-width: 992px;
+}
 .hero{
     margin-top: 50px;
 }
 .navbar-brand{
     font-size: 14px;
 }
+footer .row{
+    justify-content: space-around !important;
+}
 }
 
 @media screen and (max-width:768px) {
-    /* .whiteSpace{
+    .whiteSpace{
         margin-left: 25px;
         margin-right: 25px;
-    } */
+    }
     .hero{
         flex-grow: 0;
         align-items: flex-start !important;
+         p,h1{
+            max-width: 100% !important;
+         }
     }
     .navbar-brand{
         font-size: 14px !important;
@@ -226,11 +236,12 @@ footer{
         width: 24px;
         height: 24px;
     }
-    .hero-info{
+    /* .hero-info{
         text-align: center;
-    }
+    } */
     .hero-img{
         min-width:250px;
+        margin: 0 auto; 
     }
     .hero-img img{
         width: 100%;
