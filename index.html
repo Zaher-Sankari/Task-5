@@ -12,9 +12,8 @@
     <title>Digital Agency</title>
 </head>
 <body>
-    <header class="d-flex flex-column vh-100">
-        <nav class="navbar navbar-expand-md whiteSpace position-relative">
-            <div class="aura position-absolute"></div>
+    <header class="d-flex flex-column mb-120 position-relative">
+        <nav class="navbar navbar-expand-md whiteSpace">
             <div class="container z-3">
                 <a class="navbar-brand fw-bold fs-4" href="#">Digital Agency</a>
                 <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,10 +21,10 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link text-capitalize active" aria-current="page" href="#">home</a>
-                        <a class="nav-link text-capitalize" href="#about">about</a>
-                        <a class="nav-link text-capitalize" href="#testimonial">testimonials</a>
-                        <a class="nav-link text-capitalize" href="#contact">contact</a>
+                        <a class="nav-link text-capitalize fw-normal active" aria-current="page" href="#">home</a>
+                        <a class="nav-link text-capitalize fw-normal" href="#about">about</a>
+                        <a class="nav-link text-capitalize fw-normal" href="#testimonial">testimonials</a>
+                        <a class="nav-link text-capitalize fw-normal" href="#contact">contact</a>
                     </div>
                 </div>
             </div>
@@ -48,21 +47,23 @@
         </div>
     </header>
 
-    <main class="whiteSpace">
-        <section class="py-5 bg-light brands">
+    <main class="">
+        <section class="py-5 brands whiteSpace">
             <div class="container">
                 <p class="text-center fw-light mb-4">Trusted by 4,000+ companies</p>
-                <div class="d-flex flex-wrap justify-content-center justify-content-md-around align-items-center gap-5">
-                    <img src="./assets/imgs/spotify.png" alt="Spotify Logo">
-                    <img src="./assets/imgs/slack.png" alt="Slack Logo">
-                    <img src="./assets/imgs/dropbox.png" alt="Dropbox Logo">
-                    <img src="./assets/imgs/zoom.png" alt="Zoom Logo">
+                <div class="bg-light d-flex flex-wrap justify-content-center justify-content-md-around align-items-center gap-5 brands-container">
+                    <img class="py-4" src="./assets/imgs/spotify.png" alt="Spotify Logo">
+                    <img class="py-4" src="./assets/imgs/slack.png" alt="Slack Logo">
+                    <img class="py-4" src="./assets/imgs/dropbox.png" alt="Dropbox Logo">
+                    <img class="py-4" src="./assets/imgs/zoom.png" alt="Zoom Logo">
                 </div>
             </div>
         </section>
-        <section id="about" class="py-5 my-4 position-relative overflow-hidden">
-            <div class="container mb-120">
-                <div class="row justify-content-between align-items-center gy-5 about">
+
+        <section id="about" class="py-5 my-4 about position-relative overflow-x-hidden">
+            <div class="whiteSpace">
+            <div class="container m-0 mb-120">
+                <div class="row justify-content-between align-items-center gy-5 about-row">
                     <div class="col-md-6 text-center">
                         <img src="./assets/imgs/pencil.png" alt="People carrying a large pencil" class="img-fluid">
                     </div>
@@ -71,7 +72,7 @@
                         <p class="fs-5 text-secondary my-4">
                             Commonly used in the graphic, print & publishing industris for previewing visual layout and mockups
                         </p>
-                            <i class="fa-solid fa-arrow-right arrow"></i>
+                            <i class="fa-solid fa-arrow-right fs-5"></i>
                     </div>
                 </div>
             </div>
@@ -82,67 +83,68 @@
                         <p class="fs-5 text-secondary my-4">
                             Commonly used in the graphic, print & publishing industris for previewing visual layout and mockups
                         </p>
-                            <i class="fa-solid fa-arrow-right arrow"></i>
+                            <i class="fa-solid fa-arrow-right fs-5"></i>
                     </div>
                     <div class="col-md-6 text-center order-1 order-md-2">
                         <img src="./assets/imgs/analyze.png" alt="A person working on a screen with data" class="img-fluid">
                     </div>
                 </div>
             </div>
+        </div>
         </section>
-        <!-- TESTI. -->
-        <section id="testimonial" class="py-5 text-center container">
+
+        <section id="testimonial" class="py-5 text-center whiteSpace">
             <div class="testimonial-heading m-auto">
                 <h1 class="text-uppercase fw-normal fs-6">Testimonials</h1>
                 <h2 class="fw-bold display-5">Read What Other Have To Say</h2>
             </div>
-            <div class="slider-container m-auto">
-                <div class="testimonial-card" id="card1">
-                    <img src="./assets/imgs/testimonial-1.png" alt="1">
-                    <h3 class="fw-normal mb-0">Andrew Rathore</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
+            <div class="slider-container m-auto d-flex overflow-x-auto gap-3">
+                <div class="testimonial-card text-center" id="card1">
+                    <img class="rounded-circle mb-2" src="./assets/imgs/testimonial-1.png" alt="1">
+                    <h3 class="fw-normal mb-0 pb-4">Andrew Rathore</h3>
+                    <p class="m-auto fs-p fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
                 </div>
-                <div class="testimonial-card" id="card2">
-                    <img src="./assets/imgs/testimonial-2.png" alt="2">
-                    <h3 class="fw-normal mb-0">Vera Duncan</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
+                <div class="testimonial-card text-center" id="card2">
+                    <img class="rounded-circle mb-2"  src="./assets/imgs/testimonial-2.png" alt="2">
+                    <h3 class="fw-normal mb-0 pb-4">Vera Duncan</h3>
+                    <p class="m-auto fs-p fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
                 </div>
-                <div class="testimonial-card" id="card3">
-                    <img src="./assets/imgs/testimonial-3.png" alt="3">
-                    <h3 class="fw-normal mb-0">Mark Smith</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
+                <div class="testimonial-card text-center" id="card3">
+                    <img class="rounded-circle mb-2"  src="./assets/imgs/testimonial-3.png" alt="3">
+                    <h3 class="fw-normal mb-0 pb-4">Mark Smith</h3>
+                    <p class="m-auto fs-p fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
                 </div>
-                <div class="testimonial-card" id="card4">
-                    <img src="./assets/imgs/testimonial-4.png" alt="4">
-                    <h3 class="fw-normal mb-0">Sarah Lee</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
+                <div class="testimonial-card text-center" id="card4">
+                    <img class="rounded-circle mb-2"  src="./assets/imgs/testimonial-4.png" alt="4">
+                    <h3 class="fw-normal mb-0 pb-4">Sarah Lee</h3>
+                    <p class="m-auto fs-p fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
                 </div>
-                <div class="testimonial-card" id="card5">
-                    <img src="./assets/imgs/testimonial-5.png" alt="5">
-                    <h3 class="fw-normal mb-0">John Doe</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
+                <div class="testimonial-card text-center" id="card5">
+                    <img class="rounded-circle mb-2"  src="./assets/imgs/testimonial-5.png" alt="5">
+                    <h3 class="fw-normal mb-0 pb-4">John Doe</h3>
+                    <p class="m-auto fs-p fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
                 </div>
             </div>
-            <div class="slider-dots dots-desktop my-3">
-                <a href="#card1" id="dot1"></a>
-                <a href="#card4" id="dot2"></a>
-                <a href="#card5" id="dot3"></a>
+            <div class="slider-dots dots-desktop my-3 d-flex justify-content-center align-items-center gap-4">
+                <a class="rounded-circle" href="#card1" id="dot1"></a>
+                <a class="rounded-circle" href="#card4" id="dot2"></a>
+                <a class="rounded-circle" href="#card5" id="dot3"></a>
             </div>
-            <div class="slider-dots dots-mobile my-3">
-                <a href="#card1"></a>
-                <a href="#card2"></a>
-                <a href="#card3"></a>
-                <a href="#card4"></a>
-                <a href="#card5"></a>
+            <div class="slider-dots dots-mobile my-3 d-none d-flex justify-content-center align-items-center gap-4">
+                <a class="rounded-circle" href="#card1"></a>
+                <a class="rounded-circle" href="#card2"></a>
+                <a class="rounded-circle" href="#card3"></a>
+                <a class="rounded-circle" href="#card4"></a>
+                <a class="rounded-circle" href="#card5"></a>
             </div>
         </section>
-        <!-- END TESTI. -->
-        <section id="contact" class="contact">
-                        <div class="container">
-                <div class="row justify-content-between align-items-center gy-5 about">
-                    <div class="col-md-6 text-center">
+
+        <section id="contact" class="contact whiteSpace">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center gy-5 about-row">
+                        <div class="col-md-6 text-center">
                         <img src="./assets/imgs/customer-support.png" alt="" class="img-fluid">
-                    </div>
+                        </div>
                     <div class="col-md-5 text-md-start text-center">
                         <h2 class="display-5 fw-bold">Be a part of the next big thing</h2>
                         <p class="fs-5 text-secondary my-4">
@@ -163,7 +165,7 @@
             </div>
                 <div class="info-div col-12 col-md-3 w-auto">
                 <h2 class="mb-4 fw-bold">Resources</h2>
-                <ul class="p-0">
+                <ul class="p-0 list-unstyled">
                     <li class="pb-4"><a class="text-decoration-none href="#">Guides</a></li>
                     <li class="pb-4"><a class="text-decoration-none href="#">Blog</a></li>
                     <li class="pb-4"><a class="text-decoration-none href="#">Customer Stories</a></li>
@@ -172,7 +174,7 @@
             </div>
                 <div class=" info-div col-12 col-md-3 w-auto">
                 <h2 class="mb-4 fw-bold">Company</h2>
-                <ul class="p-0">
+                <ul class="p-0 list-unstyled">
                     <li class="pb-4"><a class="text-decoration-none href="#">About Us</a></li>
                     <li class="pb-4"><a class="text-decoration-none href="#">Careers</a></li>
                     <li class="pb-4"><a class="text-decoration-none href="#">Partners</a></li>
@@ -181,7 +183,7 @@
             </div>
                 <div class="info-div col-12 col-md-3 w-auto">
                 <h2 class="mb-4 fw-bold">Social Media</h2>
-                <ul class="p-0">
+                <ul class="p-0 list-unstyled">
                     <li class="pb-4"><a class="text-decoration-none href="#">LinkedIn</a></li>
                     <li class="pb-4"><a class="text-decoration-none href="#">Facebook</a></li>
                     <li class="pb-4"><a class="text-decoration-none href="#">Instagram</a></li>
