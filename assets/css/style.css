@@ -13,9 +13,6 @@
     --white:#fff;
     --card-bg:#F6F6F6;
 }
-html {
-    scroll-behavior: smooth;
-}
 .whiteSpace{
     margin-inline: 188px;
 }
@@ -96,58 +93,60 @@ header::before{
     filter: blur(100px);
     z-index: -1;
 }
+/*TESTIMONIAL*/
+/*to hide the carousel Transition*/
+.carousel-fade-no-transition .carousel-item {
+    transition: none !important;
+    opacity: 1 !important;
+    display: none;
+}
+.carousel-fade-no-transition .carousel-item.active {
+    display: block;
+}
+
+#testimonial{
+    max-width: 1065px;
+}
 .testimonial-heading{
     max-width: 436px;
     h1,h2{
         color: var(--primary-color);
     }
 }
-.slider-container {
-    max-width: 1065px;
-    padding: 32px 0;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-}
 .testimonial-card {
-    flex: 0 0 100%;
-    scroll-snap-align: center;
-    background-color: var(--card-bg);
+    background: white;
     border-radius: 20px;
-    padding: 20px;
     max-width: 345px;
-    max-height: 334px;
 
-    h3{
-        font-size: 18px;
-        color: var(--primary-color);
-    }
     p{
         max-width: 280px;
-        color: var(--primary-color);
     }
 }
 .testimonial-card img {
     width: 130px;
     height: 130px;
-}             
-.slider-dots {
-    height: 30px;
 }
-.slider-dots a {
+.carousel-indicators {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+        
+.carousel-indicators [data-bs-target] {
     width: 12px;
     height: 12px;
-    border: 2px solid var(--btn-primary);
-    transition: background-color 0.3s;
-    transition: all ease-in-out .3s;
+    border-radius: 50%;
+    background-color: #dee2e6;
+    border: none;
+    margin: 0 5px;
+    opacity: 1;
 }
-.slider-dots a:hover,.slider-dots a:focus {
+        
+.carousel-indicators .active{
     background-color: var(--btn-primary);
-    width: 20px;
-    height: 20px;
+    height: 24px;
+    width: 24px;
 }
-.slider-container {
-    scrollbar-width: none;
-}
+/*---------*/         
 #contact{
     background-color: var(--card-bg);
     border-radius: 20px;
@@ -234,6 +233,12 @@ footer .row{
     #testimonial{
         margin-bottom: 120px;
     }
+    .mobile-carousel{
+        display: block !important;
+    }
+    .desktop-carousel{
+        display: none;
+    }
     .testimonial-heading{
     h1{
         font-size: 12px !important;
@@ -242,12 +247,6 @@ footer .row{
         font-size: 32px;
     }
 }
-    .dots-desktop {
-    display: none !important;}
-        
-    .dots-mobile {
-    display: flex !important;
-    }
 
     #contact .container{
         h2,p{
