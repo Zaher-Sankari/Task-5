@@ -49,9 +49,9 @@
 
     <main class="">
         <section class="py-5 brands whiteSpace">
-            <div class="container">
+            <div class="container brands-wrapper">
                 <p class="text-center fw-light mb-4">Trusted by 4,000+ companies</p>
-                <div class="bg-light d-flex flex-wrap justify-content-center justify-content-md-around align-items-center gap-5 brands-container">
+                <div class="brands-container bg-light d-flex justify-content-around align-items-center gap-5 ">
                     <img class="py-4" src="./assets/imgs/spotify.png" alt="Spotify Logo">
                     <img class="py-4" src="./assets/imgs/slack.png" alt="Slack Logo">
                     <img class="py-4" src="./assets/imgs/dropbox.png" alt="Dropbox Logo">
@@ -62,10 +62,10 @@
 
         <section id="about" class="py-5 my-4 about position-relative overflow-hidden">
             <div class="whiteSpace">
-            <div class="container m-0 mb-120">
-                <div class="row justify-content-between align-items-center gy-5 about-row">
+            <div class="container mb-120">
+                <div class="row justify-content-between align-items-center about-row">
                     <div class="col-md-6 text-center">
-                        <img src="./assets/imgs/pencil.png" alt="People carrying a large pencil" class="img-fluid">
+                        <img src="./assets/imgs/pencil.png" alt="" class="img-fluid">
                     </div>
                     <div class="col-md-5 text-md-start text-center">
                         <h2 class="display-5 fw-bold">Branding & Design System</h2>
@@ -77,7 +77,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row justify-content-between align-items-center gy-5">
+                <div class="row justify-content-around align-items-center">
                     <div class="col-md-5 text-md-start text-center">
                         <h2 class="display-5 fw-bold">Custome & Plugin Development</h2>
                         <p class="fs-5 text-secondary my-4">
@@ -99,6 +99,7 @@
                 <h2 class="fw-bold display-5">Read What Other Have To Say</h2>
             </div>
         <div class="desktop-carousel">
+            <!--لألغي الأنميشن css كان في بالسطر 103 كلاس سلايد بس لغيتو مشان يتطبق كود-->
             <div id="desktopCarousel" class="carousel carousel-fade-no-transition" data-bs-ride="false">
                 <div class="carousel-inner">
                     <div class="carousel-item">
@@ -186,8 +187,8 @@
             </div>
         </div>
 
-        <div class="mobile-carousel d-none">
-            <div id="mobileCarousel" class="carousel slide position-relative" data-bs-ride="false">
+        <div class="mobile-carousel d-none d-flex justify-content-center mb-120">
+            <div id="mobileCarousel" class="carousel slide" data-bs-ride="false">
                 <div class="carousel-inner">
 
                     <div class="carousel-item active">
@@ -255,7 +256,7 @@
                     </div>
                 </div>
                 
-                <div class="carousel-indicators">
+                <div class="carousel-indicators position-absolute">
                     <button type="button" data-bs-target="#mobileCarousel" data-bs-slide-to="0" class="active"></button>
                     <button type="button" data-bs-target="#mobileCarousel" data-bs-slide-to="1"></button>
                     <button type="button" data-bs-target="#mobileCarousel" data-bs-slide-to="2"></button>
@@ -268,9 +269,9 @@
     </div>
         </section>
 
-        <section id="contact" class="contact whiteSpace">
+        <section id="contact" class="contact whiteSpace mt-136 mx-auto">
                 <div class="container">
-                    <div class="row justify-content-between align-items-center gy-5 about-row">
+                    <div class="row justify-content-between align-items-center about-row">
                         <div class="col-md-6 text-center">
                         <img src="./assets/imgs/customer-support.png" alt="" class="img-fluid">
                         </div>
